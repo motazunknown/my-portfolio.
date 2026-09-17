@@ -48,6 +48,7 @@
     <section id="contact" class="contact-section"><p style="color: #38bdf8;">عدد الرسائل المرسلة حتى الآن: <span id="counter">0</span></p>
         <h2>تواصل معي</h2>
         <form class="contact-form">
+            <input type="text" id="userName" placeholder="اسمك" required>
             <input type="text" placeholder="اسمك" required>
             <input type="email" placeholder="البريد الإلكتروني" required>
             <textarea rows="4" placeholder="رسالتك..." required></textarea>
@@ -57,19 +58,25 @@
 
     <!-- كود التفاعلية JavaScript -->
     <script>
-    // 1. إنشاء متغير العداد في الذاكرة
     let count = 0;
 
     function sendMessage() {
-        // 2. زيادة العداد بمقدار 1
-        count = count + 1;
+        // 1. قراءة ما كتبه الزائر في حقل الاسم
+        let nameField = document.getElementById("userName").value;
 
-        // 3. تحديث الرقم الظاهر في الصفحة فوراً عبر الـ DOM
-        document.getElementById("counter").innerText = count;
-
-        // 4. إظهار تنبيه للزائر
-        alert("شكراً لك! تم استلام رسالتك رقم " + count);
+        // 2. التحقق: إذا كان الحقل فارغاً
+        if (nameField === "") {
+            alert("عفواً، يجب إدخال اسمك أولاً قبل الإرسال!");
+        } 
+        // 3. وإلا (إذا كتب اسمه بنجاح)
+        else {
+            count = count + 1;
+            document.getElementById("counter").innerText = count;
+            alert("شكراً لك يا " + nameField + "! تم استلام رسالتك رقم " + count);
+        }
     }
+</script>
+</script>
 </script>
     </script>
     </section>

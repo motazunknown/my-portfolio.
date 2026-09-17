@@ -45,7 +45,7 @@
                 <p>إدارة الإصدارات ونشر المواقع حياً.</p>
             </div>
         </div><!-- 4. قسم اتصل بي (Contact) -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section"><p style="color: #38bdf8;">عدد الرسائل المرسلة حتى الآن: <span id="counter">0</span></p>
         <h2>تواصل معي</h2>
         <form class="contact-form">
             <input type="text" placeholder="اسمك" required>
@@ -57,9 +57,21 @@
 
     <!-- كود التفاعلية JavaScript -->
     <script>
-        function sendMessage() {
-            alert("شكراً لك! تم استلام رسالتك بنجاح.");
-        }
+       <script>
+    // 1. إنشاء متغير العداد في الذاكرة
+    let count = 0;
+
+    function sendMessage() {
+        // 2. زيادة العداد بمقدار 1
+        count = count + 1;
+
+        // 3. تحديث الرقم الظاهر في الصفحة فوراً عبر الـ DOM
+        document.getElementById("counter").innerText = count;
+
+        // 4. إظهار تنبيه للزائر
+        alert("شكراً لك! تم استلام رسالتك رقم " + count);
+    }
+</script>
     </script>
     </section>
     </section>

@@ -45,13 +45,15 @@
                 <p>إدارة الإصدارات ونشر المواقع حياً.</p>
             </div>
         </div><!-- 4. قسم اتصل بي (Contact) -->
-    <section id="contact" class="contact-section"><p style="color: #38bdf8;">عدد الرسائل المرسلة حتى الآن: <span id="counter">0</span></p>
+    <section id="contact" class="contact-section">
         <h2>تواصل معي</h2>
+        <p style="color: #38bdf8;">عدد الرسائل المرسلة حتى الآن: <span id="counter">0</span></p>
+        
+        <!-- الاستمارة مع الـ IDs الجديدة -->
         <form class="contact-form">
             <input type="text" id="userName" placeholder="اسمك" required>
-            <input type="text" placeholder="اسمك" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea rows="4" placeholder="رسالتك..." required></textarea>
+            <input type="email" id="userEmail" placeholder="البريد الإلكتروني" required>
+            <textarea id="userMessage" rows="4" placeholder="رسالتك..." required></textarea>
             <button type="button" onclick="sendMessage()">إرسال الرسالة</button>
         </form>
     </section>
@@ -73,8 +75,13 @@
             count = count + 1;
             document.getElementById("counter").innerText = count;
             alert("شكراً لك يا " + nameField + "! تم استلام رسالتك رقم " + count);
+            document.getElementById("userName").value = "";
+        document.getElementById("userName").value = "";
+            document.getElementById("userEmail").value = "";
+            document.getElementById("userMessage").value = "";
         }
-    }
+        }
+    
 </script>
 </script>
 </script>

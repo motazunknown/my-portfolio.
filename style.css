@@ -1,0 +1,150 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    text-align: center;
+}
+
+/* الشريط العلوي */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* قسم التعريف */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+}/* قسم المهارات */
+.skills-section {
+    padding: 60px 20px;
+    background-color: #1e293b;
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 25px;
+    width: 200px;
+    text-align: right;
+}
+
+.skill-card h3 {
+    color: #f8fafc;
+    margin-top: 0;
+}
+
+.skill-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.5;
+}/* قسم اتصل بي */
+.contact-section {
+    padding: 60px 20px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: #f8fafc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
